@@ -1,35 +1,28 @@
 div{
     border: 2px solid black;
-    background-color:blanchedalmond;
+    background-color:red;
     width: 100%;
 }
 
-.a{
-    height: 100px;
-    margin-top: 30px;
+@media(max-width:768px ){
+    
+body main{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,300px);
+}
+div{
+    background-color: thistle;
+}
 }
 
-.b {
-    height: 125px;
-}
-.c, .d {
-    height: 150px;
-}
-.e, .f, .g, .h {
-    width: 50%;
-    height: 200px;
-}
-.i {
-    height: 80px;
 
-}
-
-@media(min-width: 768px) {
+@media only screen and (min-width: 767px) and (max-width: 959px)  {
     div {
         background-color: blanchedalmond
     }
     .a {
-        width: 100%px;
+        width: 100%;
         height: 100px;
         grid-column: 1/span 5;
     }
@@ -37,44 +30,86 @@ div{
         height: 700px;
         grid-column: 1 / span 1;
     }
-    .c {
-        height: 200px;
-        grid-column: 2 / 4;
-    }
-    .d {
-        height: 200px;
-        grid-column: 4 / 6;  
-    }
-    .e {
+    .g {
         height: 250px;
         width: 100%;
-       grid-column: 2/3;
+        grid-column: 4 / 6;
+        grid-row: 4/5;
+
     }
     .f {
         height: 250px;
         width: 100%;
-        grid-column: 3 / 4;
+       grid-column: 3/4;
+       grid-row: 4/5;
     }
-    .g {
+
+        .c {
+            height: 200px;
+            grid-column: 2 / 6;}
+            .d {
+                height: 200px;
+                grid-column: 2 / 6;  
+            }
+            .e {
         height: 250px;
         width: 100%;
-        grid-column: 4 / 5;
+       grid-column: 2/3;
+       grid-row: 4/5;
     }
     .h {
         height: 250px;
         width: 100%;
-        grid-column: 5 / 6;
+       grid-column: 2/3;
+       grid-row: 4/5;
     }
-    .i {
-        height: 250px;
-        width: 100%;
-        grid-column: 2 / 6;
-        padding-bottom: 20px;
+    .i{
+        height: 150px;
+        grid-column: 2/6;
+        grid-row: 5/6;
+
+
     }
-}
+}  
+
 
 @media(min-width: 960px) {
     div {
         background-color:cadetblue;
     }
-}
+    
+    .a {
+        width: 100%;
+        height: 100px;
+        grid-column: 1/span 5;
+    }
+    .b {
+        height: 650px;
+        grid-column: 1 / span 1;
+    }
+    .g {
+        height: 250px;
+        width: 100%;
+        grid-column: 4 / 5;}
+
+        .c {
+            height: 200px;
+            grid-column: 2 / 4;}
+            .d {
+                height: 200px;
+                grid-column: 4 / 6;  
+            }
+            .e {
+        height: 250px;
+        width: 100%;
+       grid-column: 2/3;
+    }
+    .i{
+        height: 250px;
+        grid-column: 2/6;
+
+    }
+}  
+
+
+
