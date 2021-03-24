@@ -9,13 +9,13 @@
 
 
     #a {
-        width: 480px;
+        width: 500px;
         height: 75px;
         
       }
   
       #b{
-          width: 480px;
+          width: 500px;
           height: 150px;
      
       }
@@ -24,7 +24,7 @@
   
       #c, #d {
           clear: both;
-          width: 480px;
+          width: 500px;
           height: 125px;
       }
   
@@ -35,11 +35,13 @@
       #Q{
           float: left;
           clear: left;
-          width: 100%;
+          width: 500px;
       }
   
       #f {
           float: right;
+          
+          clear: right;
           
       }
   
@@ -59,12 +61,12 @@
       #i{
           clear:both;
       
-          width: 480px;
+          width: 500px;
           height: 80px;
       }
     
       #e, #f, #g, #h{
-          width: 240px;
+          width: 250px;
           height: 250x;
       }
 
